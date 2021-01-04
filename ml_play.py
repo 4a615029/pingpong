@@ -17,7 +17,7 @@ class MLPlay:
         self.side = side
         # Need scikit-learn==0.22.2 
         if self.side == "1P":
-            with open(os.path.join(os.path.dirname(__file__),'save','1Pmodel1.pickle'), 'rb') as f:
+            with open(os.path.join(os.path.dirname(__file__),'save','model.pickle'), 'rb') as f:
                 self.model = pickle.load(f)
         else:
             with open(os.path.join(os.path.dirname(__file__),'save','2Pmodel.pickle'), 'rb') as f:
